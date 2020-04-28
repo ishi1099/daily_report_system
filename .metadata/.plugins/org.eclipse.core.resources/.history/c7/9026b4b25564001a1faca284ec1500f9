@@ -1,0 +1,13 @@
+package yakyuu;
+
+public class BaseBallTeam {
+
+    //プロパティ
+    private String name;
+    private int win;
+    private int lose;
+    private int draw:
+
+
+
+}

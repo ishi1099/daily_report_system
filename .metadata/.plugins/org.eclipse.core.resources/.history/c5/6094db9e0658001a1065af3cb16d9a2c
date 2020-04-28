@@ -1,0 +1,19 @@
+
+public class Price {
+
+    public static void main(String[] args) {
+    // TODO 自動生成されたメソッド・スタブ
+
+        int price = 155;
+        int tax1 = tax(price);
+        System.out.print(price + "円の商品の税込価格は" + (price + tax1) + "円(消費税は" + tax1 + "円)です。");
+        
+    }
+    
+    public static int tax(int price){
+    
+        int taxper=10;
+        return price*taxper/100;
+    }
+
+}

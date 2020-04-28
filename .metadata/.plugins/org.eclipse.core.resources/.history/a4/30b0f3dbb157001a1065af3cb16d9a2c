@@ -1,0 +1,27 @@
+/**
+ *
+ */
+
+/**
+ * @author ishii
+ *
+ */
+public class Sample01 {
+
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+    // TODO 自動生成されたメソッド・スタブ
+
+
+    int number1;
+    String str1;
+    number1 =1;
+    str1 = "a";
+    System.out.print(number1);
+    System.out.print(str1);
+    
+    }
+
+}

@@ -1,0 +1,55 @@
+package yakyuu;
+
+public class BaseBallTeam {
+
+    //プロパティ
+    private String name;
+    private int win;
+    private int lose;
+    private int draw;
+
+    public void setName(String name){
+    this.name = name;
+    }
+
+    public String getName(){
+
+    return name;
+
+    }
+
+    public void setLose(int lose){
+
+    this.lose = lose;
+    }
+
+    public int getLose(){
+
+    return lose;
+
+    }
+    public void setWin(int win){
+
+    this.win = win;
+
+    }
+
+    public int getWin(int win){
+
+    return win;
+
+    }
+
+ public void setDraw(int draw){
+
+    this.draw = draw;
+
+    }
+
+    public int getDraw(int draw){
+
+    return draw;
+
+    }
+
+}
