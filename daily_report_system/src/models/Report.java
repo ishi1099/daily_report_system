@@ -25,7 +25,18 @@ import javax.persistence.Table;
             name = "getReportsCount",
             query = "SELECT COUNT(r) FROM Report AS r"
             ),
+    @NamedQuery(
+            name = "getMyAllReports",
+            query = "SELECT r FROM Report AS r WHERE r.employee = :employee ORDER BY r.id DESC"
+            ),
+    @NamedQuery(
+            name = "getMyReportsCount",
+            query = "SELECT COUNT(r) FROM Report AS r WHERE r.employee = :employee"
+            )
+
 })
+
+
 @Entity
 public class Report {
     @Id
@@ -52,6 +63,29 @@ public class Report {
 
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
+
+    @Column(name = "work_at", nullable = false)
+    private String work_at;
+
+    @Column(name = "leave_at", nullable = false)
+    private String leave_at;
+
+
+    public String getWork_at() {
+    return work_at;
+    }
+
+    public void setWork_at(String work_at) {
+    this.work_at = work_at;
+    }
+
+    public String getLeave_at() {
+    return leave_at;
+    }
+
+    public void setLeave_at(String leave_at) {
+    this.leave_at = leave_at;
+    }
 
     public Integer getId() {
         return id;

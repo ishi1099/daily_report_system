@@ -27,4 +27,16 @@
 <br /><br />
 
 <input type="hidden" name="_token" value="${_token}" />
+
+<label for="content">出勤時刻(半角数字4桁)</label><br />
+<input type="text" name="work_at" value="${report.work_at}" />
+<br /><br />
+
+<label for="content">退勤時刻(半角数字4桁)</label><br />
+<input type="text" name="leave_at" value="${report.leave_at}" />
+<br /><br />
+
+<input type="hidden" name="_token" value="${_token}" />
+
+
 <button type="submit">投稿</button>
